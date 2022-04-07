@@ -1,4 +1,4 @@
-FROM solanalabs/solana:v1.9.12
+FROM solanalabs/solana:v1.9.14
 
 RUN apt-get update && \
     apt-get install --no-install-recommends rustc curl jq -y && \
