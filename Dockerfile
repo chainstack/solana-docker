@@ -1,4 +1,4 @@
-FROM solanalabs/solana:v1.16.6
+FROM solanalabs/solana:v1.14.19
 
 RUN apt-get update && \
     apt-get install --no-install-recommends rustc curl jq ca-certificates librust-curl+openssl-probe-dev -y && \
