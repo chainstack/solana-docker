@@ -1,4 +1,4 @@
-FROM anzaxyz/agave:v1.18.23
+FROM anzaxyz/agave:v2.0.8
 
 RUN apt-get update && \
     apt-get install --no-install-recommends rustc curl jq ca-certificates librust-curl+openssl-probe-dev -y && \
