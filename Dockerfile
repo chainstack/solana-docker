@@ -1,4 +1,4 @@
-FROM anzaxyz/agave:v2.1.13
+FROM anzaxyz/agave:v2.1.15
 
 # Install dependencies
 RUN apt-get update && \
@@ -9,6 +9,6 @@ RUN apt-get update && \
 # Download and unpack yellowstone-grpc (solana geyser plugin)
 RUN mkdir -p /opt/yellowstone-grpc && \
     curl -L -o /tmp/yellowstone-grpc.tar.bz2 \
-      "https://github.com/rpcpool/yellowstone-grpc/releases/download/v5.0.0+solana.2.1.13/yellowstone-grpc-geyser-release-x86_64-unknown-linux-gnu.tar.bz2" && \
+      "https://github.com/rpcpool/yellowstone-grpc/releases/download/v5.0.1+solana.2.1.15/yellowstone-grpc-geyser-release-x86_64-unknown-linux-gnu.tar.bz2" && \
     tar -xjf /tmp/yellowstone-grpc.tar.bz2 -C /opt/yellowstone-grpc --strip-components=1 && \
     rm /tmp/yellowstone-grpc.tar.bz2
