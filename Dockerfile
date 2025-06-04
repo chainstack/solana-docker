@@ -1,4 +1,4 @@
-FROM anzaxyz/agave:v2.2.14
+FROM anzaxyz/agave:v2.2.15
 
 # Install dependencies
 RUN apt-get update && \
