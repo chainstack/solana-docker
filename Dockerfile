@@ -9,6 +9,6 @@ RUN apt-get update && \
 # Download and unpack yellowstone-grpc (solana geyser plugin)
 RUN mkdir -p /opt/yellowstone-grpc && \
     curl -L -o /tmp/yellowstone-grpc.tar.bz2 \
-      "https://github.com/rpcpool/yellowstone-grpc/releases/download/v8.0.0+solana.2.3.1/yellowstone-grpc-geyser-release22-x86_64-unknown-linux-gnu.tar.bz2" && \
+      "https://github.com/rpcpool/yellowstone-grpc/releases/download/v8.0.0+solana.2.3.2/yellowstone-grpc-geyser-release22-x86_64-unknown-linux-gnu.tar.bz2" && \
     tar -xjf /tmp/yellowstone-grpc.tar.bz2 -C /opt/yellowstone-grpc --strip-components=1 && \
     rm /tmp/yellowstone-grpc.tar.bz2
